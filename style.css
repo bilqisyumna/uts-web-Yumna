@@ -1,0 +1,41 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background-color: #f0f2f5; color: #1a1a1a; }
+
+.container { display: flex; min-height: 100vh; }
+
+/* Sidebar */
+.sidebar { width: 260px; background-color: #1e293b; color: white; display: flex; flex-direction: column; }
+.sidebar-header { padding: 30px; text-align: center; border-bottom: 1px solid #334155; }
+.nav-links { list-style: none; padding: 20px 0; flex-grow: 1; }
+.nav-links li { padding: 15px 30px; transition: 0.3s; }
+.nav-links li.active { background-color: #334155; border-left: 4px solid #3b82f6; }
+.nav-links li a { color: #cbd5e1; text-decoration: none; font-weight: 500; }
+.sidebar-footer { padding: 20px; font-size: 12px; text-align: center; color: #94a3b8; }
+
+/* Main Content */
+.content { flex-grow: 1; padding: 40px; }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
+.user-profile { background: white; padding: 8px 20px; border-radius: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+
+/* Stats Cards */
+.stats-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+.card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+.card h3 { font-size: 14px; color: #64748b; margin-bottom: 10px; }
+.card p { font-size: 28px; font-weight: 600; color: #0f172a; }
+.card.warning { border-bottom: 4px solid #ef4444; }
+
+/* Table Container */
+.table-container { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+.table-header { display: flex; justify-content: space-between; margin-bottom: 20px; }
+select { padding: 8px 15px; border-radius: 6px; border: 1px solid #e2e8f0; outline: none; }
+
+/* Table Styling */
+table { width: 100%; border-collapse: collapse; }
+thead th { background-color: #f8fafc; color: #64748b; text-align: left; padding: 15px; font-size: 13px; text-transform: uppercase; }
+tbody td { padding: 15px; border-bottom: 1px solid #f1f5f9; font-size: 14px; }
+.badge { background: #e0f2fe; color: #0369a1; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+
+/* Buttons */
+.btn-add { background: #3b82f6; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-size: 14px; }
+.btn-edit { color: #3b82f6; text-decoration: none; margin-right: 10px; font-weight: 600; }
+.btn-delete { color: #ef4444; text-decoration: none; font-weight: 600; }
